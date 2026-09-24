@@ -97,3 +97,14 @@ Baud rate: **115200** for log output, variable debugging and device status monit
 - **Flashing Failure**: Confirm CH343P driver is installed correctly, use a data-transfer Type-C cable, and select the correct device port.
 
 - **Abnormal Program Operation**: ESP32-C5 does not support old IDF versions. Please use ESP-IDF v5.4 or newer.
+
+```
+/*---------------------------------------
+- WeAct Studio Official Link
+- taobao: weactstudio.taobao.com
+- aliexpress: weactstudio.aliexpress.com
+- github: github.com/WeActStudio
+- gitee: gitee.com/WeAct-TC
+- blog: www.weact-tc.cn
+---------------------------------------*/
+```

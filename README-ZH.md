@@ -1,6 +1,6 @@
 # WeAct ESP32\-C5\-A Development Board
 
- **[English]([WeActStudio/WeActStudio.ESP32-C5-A: Driver and hardware resources for WeAct ESP32-C5-A development board.](https://github.com/WeActStudio/WeActStudio.ESP32-C5-A)/README.md)**
+[English](./README.md)
 
 模组型号：ESP32C5-WROOM1-N16R8 ~~/ ESP32C5-WROOM1-N8R8 / ESP32C5-WROOM1-N8R4~~ 
 

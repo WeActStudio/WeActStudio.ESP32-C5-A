@@ -99,3 +99,14 @@ ESP32‑C5 是乐鑫新一代 **RISC\-V 架构**物联网主控，原生支持**
 - **程序异常/无法运行**：ESP32‑C5 不支持旧版 IDF，需使用 IDF v5\.4\+ 新版本环境
 
 ---
+
+```
+/*---------------------------------------
+- WeAct Studio Official Link
+- taobao: weactstudio.taobao.com
+- aliexpress: weactstudio.aliexpress.com
+- github: github.com/WeActStudio
+- gitee: gitee.com/WeAct-TC
+- blog: www.weact-tc.cn
+---------------------------------------*/
+```

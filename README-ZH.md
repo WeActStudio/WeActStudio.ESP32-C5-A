@@ -1,6 +1,6 @@
 # WeAct ESP32\-C5\-A Development Board
 
-[English](./README.md)
+[English Version](./README.md)
 
 模组型号：ESP32C5-WROOM1-N16R8 ~~/ ESP32C5-WROOM1-N8R8 / ESP32C5-WROOM1-N8R4~~ 
 

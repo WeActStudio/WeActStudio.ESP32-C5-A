@@ -2,6 +2,8 @@
 
 [中文版本](./README-ZH.md)
 
+![display](G:\WeAct_Git\WeActStudio\WeActStudio.ESP32-C5-A\Images\商品主图.png)
+
 **Module Model**: ESP32C5-WROOM1-N16R8 / ~~ESP32C5-WROOM1-N8R8~~ / ~~ESP32C5-WROOM1-N8R4~~
 
 **Chip Version**: v1.0

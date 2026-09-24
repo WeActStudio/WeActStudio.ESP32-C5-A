@@ -1,98 +1,99 @@
 # WeAct ESP32\-C5\-A Development Board
 
+**[简体中文]([WeActStudio/WeActStudio.ESP32-C5-A: Driver and hardware resources for WeAct ESP32-C5-A development board.](https://github.com/WeActStudio/WeActStudio.ESP32-C5-A)/README-ZH.md)**
 
-*模组型号**：ESP32C5\-WROOM1\-N16R8 ~~/ ESP32C5\-WROOM1\-N8R8 / ESP32C5\-WROOM1\-N8R4~~
-**芯片版本**：v1\.0
-**无线协议**：Wi‑Fi 6 \(2\.4G/5GHz 双频\)、BLE 5\.0、Zigbee 3\.0、Thread 1\.4、Matter
+**Module Model**: ESP32C5-WROOM1-N16R8 / ~~ESP32C5-WROOM1-N8R8~~ / ~~ESP32C5-WROOM1-N8R4~~
 
----
+**Chip Version**: v1.0
 
-## 📌 项目简介
-
-本仓库为 **WeAct ESP32\-C5\-A 开发板** 配套开源硬件与软件开发资料。
-
-ESP32‑C5 是乐鑫新一代 **RISC\-V 架构**物联网主控，原生支持**2\.4G \+ 5GHz 双频 Wi‑Fi 6**，兼具高速无线传输、低功耗运行与多协议组网能力，非常适合智能家居、Matter 网关、物联网采集设备、电池供电终端、无线控制产品开发与 PCB 方案验证。
+**Supported Protocols**: Wi-Fi 6 (2.4G/5GHz Dual-Band), BLE 5.0, Zigbee 3.0, Thread 1.4, Matter
 
 ---
 
-## ⚙️ 核心硬件参数
+## 📌 Project Introduction
 
-- **主控芯片**：ESP32‑C5（Chip Revision v1\.0）
+This repository provides complete open-source hardware and software development resources for the **WeAct ESP32-C5-A Development Board**.
 
-- **处理器架构**：单核 RISC\-V @ 240MHz，内置 40MHz 低功耗 LP 核
+The ESP32-C5 is Espressif’s new-generation **RISC-V architecture** IoT main controller. It natively supports **2.4G + 5GHz dual-band Wi-Fi 6**, delivering high-speed wireless transmission, low-power operation, and multi-protocol networking capabilities. It is widely applied in smart home devices, Matter gateways, IoT data acquisition terminals, battery-powered low-power devices, wireless control products, and PCB scheme verification.
 
-- **无线能力**：Wi‑Fi6 双频、BLE5\.0、802\.15\.4 协议栈（Zigbee / Thread / Matter）
+---
 
-- **存储配置（全版本适配）**
+## ⚙️ Core Hardware Specifications
+
+- **Main Controller**: ESP32-C5 (Chip Revision v1.0)
+
+- **Processor Architecture**: Single-core RISC-V @ 240MHz, equipped with a 40MHz low-power LP core
+
+- **Wireless Capability**: Dual-band Wi-Fi 6, BLE 5.0, 802.15.4 protocol stack (Zigbee / Thread / Matter)
+
+- **Storage Configuration (Full Version Compatibility)**
   
-  - ~~N8R4：8MB Flash \+ 4MB PSRAM~~
+  - ~~N8R4: 8MB Flash + 4MB PSRAM~~
   
-  - ~~N8R8：8MB Flash \+ 8MB PSRAM~~
+  - ~~N8R8: 8MB Flash + 8MB PSRAM~~
   
-  - N16R8：16MB Flash \+ 8MB PSRAM
+  - N16R8: 16MB Flash + 8MB PSRAM
 
-- **板载外设**：CH343P 高速串口芯片、Type‑C 供电与下载、自动下载电路（免 BOOT 按键）、全部 GPIO 引出
+- **Onboard Peripherals**: CH343P high-speed serial chip, Type-C power supply and download interface, automatic download circuit (no BOOT key required), full GPIO pinout
 
-- **供电方式**：5V Type‑C 输入，芯片核心工作电压 3\.3V
-
----
-
-## 🛠️ 开发环境支持
-
-全面适配主流 ESP32 开发平台，建议使用新版本以获得完整 C5 内核支持：
-
-- **ESP\-IDF**：v5\.4 及以上（推荐 **v5\.5**，完美兼容 ESP32‑C5 v1\.0）
-
-- **Arduino ESP32**：最新稳定核心库
-
-- **PlatformIO**：原生支持，可直接导入编译烧录
+- **Power Supply**: 5V Type-C input, core operating voltage 3.3V
 
 ---
 
-## 🚀 快速上手
+## 🛠️ Development Environment Support
 
-### 1\. 环境准备
+Fully compatible with mainstream ESP32 development platforms. It is recommended to use the latest versions to obtain complete ESP32-C5 kernel support:
 
-搭建对应开发环境、安装 ESP32‑C5 芯片支持包、安装 CH343P 串口驱动。
+- **ESP-IDF**: v5.4 and above (Recommended **v5.5**, fully compatible with ESP32-C5 v1.0)
 
-### 2\. 编译与烧录
+- **Arduino ESP32**: Latest stable core library
 
-工程目标选择 `ESP32C5`，通过板载 Type‑C 接口一键编译、下载，无需手动进入 BOOT 模式。
-
-### 3\. 串口调试
-
-串口波特率：**115200**，可正常输出日志、调试变量与设备状态。
+- **PlatformIO**: Native support, directly importable for compilation and flashing
 
 ---
 
-## 💡 核心功能适配
+## 🚀 Quick Start
 
-- **双频 Wi‑Fi6**：支持 2\.4G/5G 双频段切换、高速数据传输、抗干扰组网
+### 1. Environment Preparation
 
-- **低功耗开发**：支持 LP 核独立运行、深度休眠，适配电池低功耗产品
+Build the corresponding development environment, install the ESP32-C5 chip support package, and install the CH343P serial port driver.
 
-- **多协议智能组网**：兼容 Zigbee / Thread / Matter，可搭建智能家居多设备网关
+### 2. Compilation & Flashing
 
-- **丰富外设拓展**：全引脚引出，可对接传感器、显示屏、执行器等外设
+Select `ESP32C5` as the project target. Compile and download firmware via the onboard Type-C interface without manually entering BOOT mode.
 
----
+### 3. Serial Port Debugging
 
-## ⚠️ 硬件开发与量产注意事项
-
-- 本板采用 **ESP32‑C5 v1\.0 初版硅片**，量产 PCB 必须参考乐鑫官方勘误手册规避已知问题
-
-- 5GHz Wi‑Fi 对 PCB 阻抗、走线、地平面要求严格，射频部分需严格按照官方 RF 规范设计
-
-- 项目存在三种 Flash/PSRAM 配置，**量产 BOM、固件分区表需严格对应模组型号**
-
-- 多协议并发场景需开启分时复用机制，避免 Wi‑Fi / BLE / 802\.15\.4 信号冲突
+Baud rate: **115200** for log output, variable debugging and device status monitoring.
 
 ---
 
-## ❓ 常见问题 FAQ
+## 💡 Core Functional Adaptation
 
-- **烧录失败**：确认 CH343P 驱动正常、使用带数据功能的 Type‑C 线、设备端口选择正确
+- **Dual-band Wi-Fi 6**: Supports 2.4G/5G band switching, high-speed data transmission and anti-interference networking
 
-- **程序异常/无法运行**：ESP32‑C5 不支持旧版 IDF，需使用 IDF v5\.4\+ 新版本环境
+- **Low-Power Development**: Supports independent LP core operation and deep sleep mode, suitable for battery-powered low-power products
+
+- **Multi-protocol Intelligent Networking**: Compatible with Zigbee / Thread / Matter for building smart home multi-device gateways
+
+- **Rich Peripheral Expansion**: Full pin exposure, compatible with sensors, displays, actuators and other peripheral devices
 
 ---
+
+## ⚠️ Hardware Development & Mass Production Notes
+
+- This board adopts the **ESP32-C5 v1.0 initial silicon revision**. Refer to Espressif’s official errata manual for mass-production PCB design to avoid known hardware issues.
+
+- 5GHz Wi-Fi requires strict PCB impedance control, trace routing and complete ground plane design. RF circuits must comply with official Espressif RF design specifications.
+
+- This hardware has three Flash/PSRAM configuration versions. **The BOM and firmware partition table must strictly match the actual module model for mass production**.
+
+- Enable protocol time-sharing mechanism for multi-protocol concurrent scenarios to avoid signal conflicts among Wi-Fi, BLE and 802.15.4 protocols.
+
+---
+
+## ❓ FAQ
+
+- **Flashing Failure**: Confirm CH343P driver is installed correctly, use a data-transfer Type-C cable, and select the correct device port.
+
+- **Abnormal Program Operation**: ESP32-C5 does not support old IDF versions. Please use ESP-IDF v5.4 or newer.

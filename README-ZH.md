@@ -108,7 +108,7 @@ ESP32‑C5 是乐鑫新一代 **RISC\-V 架构**物联网主控，原生支持**
 - taobao: weactstudio.taobao.com
 - aliexpress: weactstudio.aliexpress.com
 - github: github.com/WeActStudio
-- gitee: gitee.com/WeAct-TC
-- blog: www.weact-tc.cn
+- gitee: gitee.com/WeActStudio
+- blog: blog.weactstudio.com
 ---------------------------------------*/
 ```
